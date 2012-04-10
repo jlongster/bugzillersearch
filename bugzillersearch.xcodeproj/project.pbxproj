@@ -38,22 +38,22 @@
 		C9CE587915348F2800C45A2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9CE587B15348F2800C45A2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9CE587D15348F2900C45A2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C9CE588115348F2900C45A2C /* bugzillersearch-Info.plist */ = {isa = PBXFileReference; path = "bugzillersearch-Info.plist"; sourceTree = "<group>"; };
+		C9CE588115348F2900C45A2C /* bugzillersearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bugzillersearch-Info.plist"; sourceTree = "<group>"; };
 		C9CE588315348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9CE588515348F2900C45A2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9CE588715348F2900C45A2C /* bugzillersearch-Prefix.pch */ = {isa = PBXFileReference; path = "bugzillersearch-Prefix.pch"; sourceTree = "<group>"; };
-		C9CE588815348F2900C45A2C /* BugZillerSearchAppDelegate.h */ = {isa = PBXFileReference; path = BugZillerSearchAppDelegate.h; sourceTree = "<group>"; };
+		C9CE588715348F2900C45A2C /* bugzillersearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bugzillersearch-Prefix.pch"; sourceTree = "<group>"; };
+		C9CE588815348F2900C45A2C /* BugZillerSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugZillerSearchAppDelegate.h; sourceTree = "<group>"; };
 		C9CE588915348F2900C45A2C /* BugZillerSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchAppDelegate.m; sourceTree = "<group>"; };
 		C9CE588C15348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C9CE588E15348F2900C45A2C /* BugZillerSearchMasterViewController.h */ = {isa = PBXFileReference; path = BugZillerSearchMasterViewController.h; sourceTree = "<group>"; };
+		C9CE588E15348F2900C45A2C /* BugZillerSearchMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugZillerSearchMasterViewController.h; sourceTree = "<group>"; };
 		C9CE588F15348F2900C45A2C /* BugZillerSearchMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchMasterViewController.m; sourceTree = "<group>"; };
-		C9CE589115348F2900C45A2C /* BugZillerSearchDetailViewController.h */ = {isa = PBXFileReference; path = BugZillerSearchDetailViewController.h; sourceTree = "<group>"; };
+		C9CE589115348F2900C45A2C /* BugZillerSearchDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugZillerSearchDetailViewController.h; sourceTree = "<group>"; };
 		C9CE589215348F2900C45A2C /* BugZillerSearchDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchDetailViewController.m; sourceTree = "<group>"; };
 		C9CE589915348F2900C45A2C /* bugzillersearchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bugzillersearchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CE589A15348F2900C45A2C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C9CE58A215348F2900C45A2C /* bugzillersearchTests-Info.plist */ = {isa = PBXFileReference; path = "bugzillersearchTests-Info.plist"; sourceTree = "<group>"; };
+		C9CE58A215348F2900C45A2C /* bugzillersearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bugzillersearchTests-Info.plist"; sourceTree = "<group>"; };
 		C9CE58A415348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9CE58A615348F2900C45A2C /* bugzillersearchTests.h */ = {isa = PBXFileReference; path = bugzillersearchTests.h; sourceTree = "<group>"; };
+		C9CE58A615348F2900C45A2C /* bugzillersearchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bugzillersearchTests.h; sourceTree = "<group>"; };
 		C9CE58A715348F2900C45A2C /* bugzillersearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bugzillersearchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -367,6 +367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
 				INFOPLIST_FILE = "bugzillersearch/bugzillersearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -378,6 +379,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
 				INFOPLIST_FILE = "bugzillersearch/bugzillersearch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
