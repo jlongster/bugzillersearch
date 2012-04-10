@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9CE587A15348F2800C45A2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587915348F2800C45A2C /* UIKit.framework */; };
+		C9CE587C15348F2900C45A2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587B15348F2800C45A2C /* Foundation.framework */; };
+		C9CE587E15348F2900C45A2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587D15348F2900C45A2C /* CoreGraphics.framework */; };
+		C9CE588415348F2900C45A2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CE588215348F2900C45A2C /* InfoPlist.strings */; };
+		C9CE588615348F2900C45A2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CE588515348F2900C45A2C /* main.m */; };
+		C9CE588A15348F2900C45A2C /* BugZillerSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CE588915348F2900C45A2C /* BugZillerSearchAppDelegate.m */; };
+		C9CE588D15348F2900C45A2C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CE588B15348F2900C45A2C /* MainStoryboard.storyboard */; };
+		C9CE589015348F2900C45A2C /* BugZillerSearchMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CE588F15348F2900C45A2C /* BugZillerSearchMasterViewController.m */; };
+		C9CE589315348F2900C45A2C /* BugZillerSearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CE589215348F2900C45A2C /* BugZillerSearchDetailViewController.m */; };
+		C9CE589B15348F2900C45A2C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE589A15348F2900C45A2C /* SenTestingKit.framework */; };
+		C9CE589C15348F2900C45A2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587915348F2800C45A2C /* UIKit.framework */; };
+		C9CE589D15348F2900C45A2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587B15348F2800C45A2C /* Foundation.framework */; };
+		C9CE58A515348F2900C45A2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CE58A315348F2900C45A2C /* InfoPlist.strings */; };
+		C9CE58A815348F2900C45A2C /* bugzillersearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CE58A715348F2900C45A2C /* bugzillersearchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9CE589E15348F2900C45A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9CE586C15348F2800C45A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9CE587415348F2800C45A2C;
+			remoteInfo = bugzillersearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9CE587515348F2800C45A2C /* bugzillersearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bugzillersearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CE587915348F2800C45A2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9CE587B15348F2800C45A2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9CE587D15348F2900C45A2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9CE588115348F2900C45A2C /* bugzillersearch-Info.plist */ = {isa = PBXFileReference; path = "bugzillersearch-Info.plist"; sourceTree = "<group>"; };
+		C9CE588315348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9CE588515348F2900C45A2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9CE588715348F2900C45A2C /* bugzillersearch-Prefix.pch */ = {isa = PBXFileReference; path = "bugzillersearch-Prefix.pch"; sourceTree = "<group>"; };
+		C9CE588815348F2900C45A2C /* BugZillerSearchAppDelegate.h */ = {isa = PBXFileReference; path = BugZillerSearchAppDelegate.h; sourceTree = "<group>"; };
+		C9CE588915348F2900C45A2C /* BugZillerSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchAppDelegate.m; sourceTree = "<group>"; };
+		C9CE588C15348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C9CE588E15348F2900C45A2C /* BugZillerSearchMasterViewController.h */ = {isa = PBXFileReference; path = BugZillerSearchMasterViewController.h; sourceTree = "<group>"; };
+		C9CE588F15348F2900C45A2C /* BugZillerSearchMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchMasterViewController.m; sourceTree = "<group>"; };
+		C9CE589115348F2900C45A2C /* BugZillerSearchDetailViewController.h */ = {isa = PBXFileReference; path = BugZillerSearchDetailViewController.h; sourceTree = "<group>"; };
+		C9CE589215348F2900C45A2C /* BugZillerSearchDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchDetailViewController.m; sourceTree = "<group>"; };
+		C9CE589915348F2900C45A2C /* bugzillersearchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bugzillersearchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CE589A15348F2900C45A2C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C9CE58A215348F2900C45A2C /* bugzillersearchTests-Info.plist */ = {isa = PBXFileReference; path = "bugzillersearchTests-Info.plist"; sourceTree = "<group>"; };
+		C9CE58A415348F2900C45A2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9CE58A615348F2900C45A2C /* bugzillersearchTests.h */ = {isa = PBXFileReference; path = bugzillersearchTests.h; sourceTree = "<group>"; };
+		C9CE58A715348F2900C45A2C /* bugzillersearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bugzillersearchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9CE587215348F2800C45A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE587A15348F2800C45A2C /* UIKit.framework in Frameworks */,
+				C9CE587C15348F2900C45A2C /* Foundation.framework in Frameworks */,
+				C9CE587E15348F2900C45A2C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CE589515348F2900C45A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE589B15348F2900C45A2C /* SenTestingKit.framework in Frameworks */,
+				C9CE589C15348F2900C45A2C /* UIKit.framework in Frameworks */,
+				C9CE589D15348F2900C45A2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9CE586A15348F2800C45A2C = {
+			isa = PBXGroup;
+			children = (
+				C9CE587F15348F2900C45A2C /* bugzillersearch */,
+				C9CE58A015348F2900C45A2C /* bugzillersearchTests */,
+				C9CE587815348F2800C45A2C /* Frameworks */,
+				C9CE587615348F2800C45A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9CE587615348F2800C45A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE587515348F2800C45A2C /* bugzillersearch.app */,
+				C9CE589915348F2900C45A2C /* bugzillersearchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9CE587815348F2800C45A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE587915348F2800C45A2C /* UIKit.framework */,
+				C9CE587B15348F2800C45A2C /* Foundation.framework */,
+				C9CE587D15348F2900C45A2C /* CoreGraphics.framework */,
+				C9CE589A15348F2900C45A2C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9CE587F15348F2900C45A2C /* bugzillersearch */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE588815348F2900C45A2C /* BugZillerSearchAppDelegate.h */,
+				C9CE588915348F2900C45A2C /* BugZillerSearchAppDelegate.m */,
+				C9CE588B15348F2900C45A2C /* MainStoryboard.storyboard */,
+				C9CE588E15348F2900C45A2C /* BugZillerSearchMasterViewController.h */,
+				C9CE588F15348F2900C45A2C /* BugZillerSearchMasterViewController.m */,
+				C9CE589115348F2900C45A2C /* BugZillerSearchDetailViewController.h */,
+				C9CE589215348F2900C45A2C /* BugZillerSearchDetailViewController.m */,
+				C9CE588015348F2900C45A2C /* Supporting Files */,
+			);
+			path = bugzillersearch;
+			sourceTree = "<group>";
+		};
+		C9CE588015348F2900C45A2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE588115348F2900C45A2C /* bugzillersearch-Info.plist */,
+				C9CE588215348F2900C45A2C /* InfoPlist.strings */,
+				C9CE588515348F2900C45A2C /* main.m */,
+				C9CE588715348F2900C45A2C /* bugzillersearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9CE58A015348F2900C45A2C /* bugzillersearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE58A615348F2900C45A2C /* bugzillersearchTests.h */,
+				C9CE58A715348F2900C45A2C /* bugzillersearchTests.m */,
+				C9CE58A115348F2900C45A2C /* Supporting Files */,
+			);
+			path = bugzillersearchTests;
+			sourceTree = "<group>";
+		};
+		C9CE58A115348F2900C45A2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE58A215348F2900C45A2C /* bugzillersearchTests-Info.plist */,
+				C9CE58A315348F2900C45A2C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9CE587415348F2800C45A2C /* bugzillersearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CE58AB15348F2900C45A2C /* Build configuration list for PBXNativeTarget "bugzillersearch" */;
+			buildPhases = (
+				C9CE587115348F2800C45A2C /* Sources */,
+				C9CE587215348F2800C45A2C /* Frameworks */,
+				C9CE587315348F2800C45A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bugzillersearch;
+			productName = bugzillersearch;
+			productReference = C9CE587515348F2800C45A2C /* bugzillersearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9CE589815348F2900C45A2C /* bugzillersearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CE58AE15348F2900C45A2C /* Build configuration list for PBXNativeTarget "bugzillersearchTests" */;
+			buildPhases = (
+				C9CE589415348F2900C45A2C /* Sources */,
+				C9CE589515348F2900C45A2C /* Frameworks */,
+				C9CE589615348F2900C45A2C /* Resources */,
+				C9CE589715348F2900C45A2C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9CE589F15348F2900C45A2C /* PBXTargetDependency */,
+			);
+			name = bugzillersearchTests;
+			productName = bugzillersearchTests;
+			productReference = C9CE589915348F2900C45A2C /* bugzillersearchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9CE586C15348F2800C45A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BugZillerSearch;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C9CE586F15348F2800C45A2C /* Build configuration list for PBXProject "bugzillersearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9CE586A15348F2800C45A2C;
+			productRefGroup = C9CE587615348F2800C45A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9CE587415348F2800C45A2C /* bugzillersearch */,
+				C9CE589815348F2900C45A2C /* bugzillersearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9CE587315348F2800C45A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE588415348F2900C45A2C /* InfoPlist.strings in Resources */,
+				C9CE588D15348F2900C45A2C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CE589615348F2900C45A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE58A515348F2900C45A2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9CE589715348F2900C45A2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9CE587115348F2800C45A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE588615348F2900C45A2C /* main.m in Sources */,
+				C9CE588A15348F2900C45A2C /* BugZillerSearchAppDelegate.m in Sources */,
+				C9CE589015348F2900C45A2C /* BugZillerSearchMasterViewController.m in Sources */,
+				C9CE589315348F2900C45A2C /* BugZillerSearchDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CE589415348F2900C45A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CE58A815348F2900C45A2C /* bugzillersearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9CE589F15348F2900C45A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9CE587415348F2800C45A2C /* bugzillersearch */;
+			targetProxy = C9CE589E15348F2900C45A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9CE588215348F2900C45A2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CE588315348F2900C45A2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9CE588B15348F2900C45A2C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CE588C15348F2900C45A2C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C9CE58A315348F2900C45A2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9CE58A415348F2900C45A2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9CE58A915348F2900C45A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9CE58AA15348F2900C45A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9CE58AC15348F2900C45A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
+				INFOPLIST_FILE = "bugzillersearch/bugzillersearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9CE58AD15348F2900C45A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
+				INFOPLIST_FILE = "bugzillersearch/bugzillersearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9CE58AF15348F2900C45A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bugzillersearch.app/bugzillersearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
+				INFOPLIST_FILE = "bugzillersearchTests/bugzillersearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C9CE58B015348F2900C45A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bugzillersearch.app/bugzillersearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bugzillersearch/bugzillersearch-Prefix.pch";
+				INFOPLIST_FILE = "bugzillersearchTests/bugzillersearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9CE586F15348F2800C45A2C /* Build configuration list for PBXProject "bugzillersearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CE58A915348F2900C45A2C /* Debug */,
+				C9CE58AA15348F2900C45A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CE58AB15348F2900C45A2C /* Build configuration list for PBXNativeTarget "bugzillersearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CE58AC15348F2900C45A2C /* Debug */,
+				C9CE58AD15348F2900C45A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9CE58AE15348F2900C45A2C /* Build configuration list for PBXNativeTarget "bugzillersearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CE58AF15348F2900C45A2C /* Debug */,
+				C9CE58B015348F2900C45A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9CE586C15348F2800C45A2C /* Project object */;
+}
