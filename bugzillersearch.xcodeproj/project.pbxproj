@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C95C03FE15361E180011B331 /* BugZillerSearchSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C03FC15361E180011B331 /* BugZillerSearchSearchViewController.m */; };
-		C95C03FF15361E180011B331 /* BugZillerSearchSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95C03FD15361E180011B331 /* BugZillerSearchSearchViewController.xib */; };
 		C95C045A15373C190011B331 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C045915373C190011B331 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
 		C95C045B15373C190011B331 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C045915373C190011B331 /* GTMHTTPFetcher.m */; };
 		C9CE587A15348F2800C45A2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CE587915348F2800C45A2C /* UIKit.framework */; };
@@ -38,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C95C03FB15361E180011B331 /* BugZillerSearchSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugZillerSearchSearchViewController.h; sourceTree = "<group>"; };
-		C95C03FC15361E180011B331 /* BugZillerSearchSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugZillerSearchSearchViewController.m; sourceTree = "<group>"; };
-		C95C03FD15361E180011B331 /* BugZillerSearchSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BugZillerSearchSearchViewController.xib; sourceTree = "<group>"; };
 		C95C045815373C190011B331 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
 		C95C045915373C190011B331 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
 		C9CE587515348F2800C45A2C /* bugzillersearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bugzillersearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +128,6 @@
 				C9CE589115348F2900C45A2C /* BugZillerSearchDetailViewController.h */,
 				C9CE589215348F2900C45A2C /* BugZillerSearchDetailViewController.m */,
 				C9CE588015348F2900C45A2C /* Supporting Files */,
-				C95C03FB15361E180011B331 /* BugZillerSearchSearchViewController.h */,
-				C95C03FC15361E180011B331 /* BugZillerSearchSearchViewController.m */,
-				C95C03FD15361E180011B331 /* BugZillerSearchSearchViewController.xib */,
 			);
 			path = bugzillersearch;
 			sourceTree = "<group>";
@@ -243,7 +235,6 @@
 			files = (
 				C9CE588415348F2900C45A2C /* InfoPlist.strings in Resources */,
 				C9CE588D15348F2900C45A2C /* MainStoryboard.storyboard in Resources */,
-				C95C03FF15361E180011B331 /* BugZillerSearchSearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +273,6 @@
 				C9CE588A15348F2900C45A2C /* BugZillerSearchAppDelegate.m in Sources */,
 				C9CE589015348F2900C45A2C /* BugZillerSearchMasterViewController.m in Sources */,
 				C9CE589315348F2900C45A2C /* BugZillerSearchDetailViewController.m in Sources */,
-				C95C03FE15361E180011B331 /* BugZillerSearchSearchViewController.m in Sources */,
 				C95C045A15373C190011B331 /* GTMHTTPFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
