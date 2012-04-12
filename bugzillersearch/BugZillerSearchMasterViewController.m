@@ -10,12 +10,18 @@
 
 #import "BugZillerSearchDetailViewController.h"
 
+#import "GTMHTTPFetcher.h"
+
 @interface BugZillerSearchMasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
 @implementation BugZillerSearchMasterViewController
+
+@synthesize searchBar;
+@synthesize tableData;
+@synthesize tableView;
 
 
 - (void)awakeFromNib
@@ -27,10 +33,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    [self.searchBar becomeFirstResponder];
 }
 
 - (void)viewDidUnload
@@ -78,7 +84,7 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -113,6 +119,63 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = [_objects objectAtIndex:indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+    }
+}
+
+// When we cancel, clear out the text in the search box.
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    searchBar.text=@"";
+
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [searchBar resignFirstResponder];
+    self.tableView.allowsSelection = YES;
+    self.tableView.scrollEnabled = YES;
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    // You'll probably want to do this on another thread
+    // SomeService is just a dummy class representing some 
+    // api that you are using to do the search
+    NSString *urlString = [NSString stringWithFormat:@"https://api-dev.bugzilla.mozilla.org/latest/bug?summary=%@", searchBar.text];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    GTMHTTPFetcher* bugzillaSearch = [GTMHTTPFetcher fetcherWithRequest:request];
+    [bugzillaSearch beginFetchWithDelegate:self
+                    didFinishSelector:@selector(bugzillaSearch:finishedWithData:error:)];
+	
+    [self.tableData removeAllObjects];
+}
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    // Existing code
+    
+    // Fading in the disableViewOverlay
+    self.tableView.allowsSelection = NO;
+    self.tableView.scrollEnabled = NO;
+}
+
+- (void)bugzillaSearch:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *)retrievedData error:(NSError *)error {
+    if (error != nil) {
+        // failed; either an NSURLConnection error occurred, or the server returned
+        // a status value of at least 300
+        //
+        // the NSError domain string for server status errors is kGTMHTTPFetcherStatusDomain
+        int status = [error code];
+    } else {
+        // fetch succeeded
+        NSLog(@"searched!");
+        NSString *resultJSON = [[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding];
+        NSLog(resultJSON);
+        
+        NSArray *results = [[NSArray alloc] init];
+        
+        [searchBar setShowsCancelButton:NO animated:YES];
+        [searchBar resignFirstResponder];
+        self.tableView.allowsSelection = YES;
+        self.tableView.scrollEnabled = YES;
+        
+        [self.tableData addObjectsFromArray:results];
+        [self.tableView reloadData];
     }
 }
 

@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BugZillerSearchMasterViewController : UITableViewController
+@interface BugZillerSearchMasterViewController : UITableViewController <UISearchBarDelegate, UITableViewDataSource> {
+    NSMutableArray *tableData;
+    
+    UITableView *tableView;
+    UISearchBar *searchBar;
+}
+
+@property(retain) NSMutableArray *tableData;
+
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+
 
 @end
