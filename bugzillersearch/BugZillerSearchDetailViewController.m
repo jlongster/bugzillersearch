@@ -16,6 +16,7 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize webView = _webView;
 
 #pragma mark - Managing the detail item
 
@@ -31,10 +32,13 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+
+
+        NSURL *url = [NSURL URLWithString:@"https://bugzilla.mozilla.org/show_bug.cgi?id=747029"];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        [_webView loadRequest: requestObj];
     }
 }
 
